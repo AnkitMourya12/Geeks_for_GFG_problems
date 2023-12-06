@@ -1,0 +1,23 @@
+
+class Solution {
+  public:
+  
+    int countX(int L, int R, int X) {
+        // code here
+        int c=0;
+        for(int i=L+1;i<R;i++)
+        {
+            int k=i;
+            while(k!=0)
+            {
+            if(k%10==X)
+            {
+                c++;
+                
+            }
+            k=k/10;
+        }
+        }
+        return c;
+    }
+};
